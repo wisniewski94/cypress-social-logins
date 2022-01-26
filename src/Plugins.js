@@ -78,8 +78,10 @@ async function login({page, options} = {}) {
     if (options.loginSelectorDelay !== false) {
       await delay(options.loginSelectorDelay)
     }
-
-    await page.click(options.loginSelector)
+    await page.evaluate((options) => {
+      document.querySelector(options.loginSelector).click();
+    }, options);
+    //await page.click(options.loginSelector)
   }
 }
 

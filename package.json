@@ -1,5 +1,5 @@
 {
-  "name": "cypress-social-logins",
+  "name": "@wisniewski94/cypress-social-logins",
   "version": "0.0.0-development",
   "description": "cypress authentication flows using social network providers",
   "main": "src/index.js",
